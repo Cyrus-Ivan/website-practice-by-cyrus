@@ -122,12 +122,6 @@
       .login-button:hover {
         background-color: #f6db17;
       }
-
-      /* RICK ROLL BELOW*/
-      #rick-modal {
-        position: absolute;
-        display: none;
-      }
     </style>
   </head>
   <body>
@@ -156,22 +150,6 @@
       <button class="login-button">Search</button>
     </div>
 
-    <!--RICK ROLL DIV-->
-    <div id="rick-modal">
-      <video
-        id="rick-video"
-        class="embed-responsive-item"
-        loop
-        autoplay
-        playsinline
-        poster="https://cdn.mtdv.me/video/rick.jpg"
-      >
-        <source src="https://cdn.mtdv.me/video/rick.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <!--RICK ROLL DIV END-->
-
     <script>
       // Update date and time
       function updateDateTime() {
@@ -185,11 +163,12 @@
       //
       // RICK ROLL
       //
-      setInterval(() => {
-        document.getElementById("rick-modal").style.display = "block";
+      setTimeout(() => {
+        window.location.href = "https://cdn.mtdv.me/video/rick.mp4";
       }, 10000);
-
+      //
       // END RICK ROLL
+      //
 
       let pokemon = "pikachu";
 
