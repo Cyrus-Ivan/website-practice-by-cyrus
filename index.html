@@ -123,6 +123,7 @@
         background-color: #f6db17;
       }
 
+      /* RICK ROLL BELOW*/
       #rick-modal {
         position: absolute;
         display: none;
@@ -154,6 +155,8 @@
       <!-- Login Button -->
       <button class="login-button">Search</button>
     </div>
+
+    <!--RICK ROLL DIV-->
     <div id="rick-modal">
       <video
         id="rick-video"
@@ -167,6 +170,7 @@
         Your browser does not support the video tag.
       </video>
     </div>
+    <!--RICK ROLL DIV END-->
 
     <script>
       // Update date and time
@@ -178,9 +182,14 @@
       updateDateTime();
       setInterval(updateDateTime, 1000);
 
+      //
+      // RICK ROLL
+      //
       setInterval(() => {
         document.getElementById("rick-modal").style.display = "block";
       }, 10000);
+
+      // END RICK ROLL
 
       let pokemon = "pikachu";
 
